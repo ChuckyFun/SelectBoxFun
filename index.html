@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChuckyFun SelectBox jQuery Plugin</title>
+
+    <!-- Css Libraries -->
+    <link href="./dist/jquery.selectbox.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://yandex.st/highlightjs/7.3/styles/default.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">jQuery.SelectBox<sup>.js</sup></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/ChuckyFun/SelectBoxFun">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Örnek</h1>
+        <article>
+            <div>
+                <label>Cinsiyet</label>
+                <div class="custom_select">
+                    <select name="gender" id="gender">
+                        <option value="-1">Farketmez</option>
+                        <option value="0">Bayan</option>
+                        <option value="1">Bay</option>
+                    </select>
+                </div>
+            </div>
+        </article>
+        <h1>Kullanım</h1>
+        <article>
+            <div class="code_area">
+                <pre>
+                    <code class="javascript">$('.custom_select select').CFSelectBox();</code>
+                </pre>
+            </div>
+        </article>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./dist/jquery.selectbox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            $('.custom_select select').CFSelectBox();
+
+            $('code').each(function(i, e) {hljs.highlightBlock(e)});
+
+        });
+    </script>
+</body>
+</html>

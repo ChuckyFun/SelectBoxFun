@@ -1,0 +1,16 @@
+.custom_select { width: 100%; position: relative; height: 36px; }
+.custom_select:after { clear: both; content: ''; display: block; }
+
+/* jQuery Select Box Plugin Styles */
+
+.cf_select_box_wrap { background: #fff url("http://www.heydate.com/images/arw2.png") no-repeat scroll right 8px top 15px; border: 1px solid #e6e6e6; border-radius: 4px; color: #b4b4b4; font: 400 12px/14px "Open Sans",sans-serif; overflow: hidden; cursor: pointer; position: absolute; width: 100%; z-index: 998; }
+.cf_select_box_wrap.opened { z-index: 999999; -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.4); -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.4); box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.4); }
+.cf_select_box_dropdown_toggler { padding: 12px 10px; }
+.cf_select_box_dropdown_toggler:after { display: block; clear: both; content: ''; }
+.cf_select_box_selected { float: left; width: 95%; color: #b1b1b1; }
+.cf_select_box_arrow { float: right; width: 5%; text-align: right; padding-right: 5px; box-sizing: border-box; }
+.cf_select_box_dropdown:before { border-top: 1px dotted #e6e6e6; content: ''; display: block; height: 10px; }
+.cf_select_box_dropdown { margin: 0 10px 10px; }
+.cf_select_box_option_list { list-style-type: none; margin: 0; padding: 0; }
+.cf_select_box_option { padding: 3px 0; cursor: pointer; }
+.cf_select_box_option:hover { color: #444444; }
