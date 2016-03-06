@@ -1,1 +1,40 @@
+body, html { margin: 0; padding: 0; }
+
+body { font-family: 'Raleway', sans-serif; font-size: 14px; }
+
+h1,h2,h3,h3,h4,h5{margin: 0; padding: 0;}
+
 pre {overflow-x: auto; white-space:pre; word-wrap:normal; font-size:12px;}
+
+.container { width: 960px; margin: 0 auto; }
+.center { text-align: center; }
+
+header { height: 50px; background: #f2f2f2; border-bottom: 1px dotted #d2d2d2; }
+header .logo { float: left; display: inline-block; }
+header .logo a { display: block; line-height: 50px; text-decoration: none; color: #00bbdd; font-size: 18px; font-weight: bold; }
+header .logo a sup { color: #005566; font-size: 8px; }
+
+header nav { float: right; display: inline-block; }
+header nav ul { list-style-type: none; margin:0; padding: 0; }
+header nav ul li { line-height: 50px; }
+header nav ul li a { text-decoration: none; color: #a1a1a1; font-weight: 700; }
+header nav ul li a:hover { color: #000000; }
+
+section h1 { margin: 20px 0; color: #005566; border-bottom: 1px dotted #005566; padding-bottom: 5px; }
+section .demostration { }
+section .demostration label { width: 100px; float: left; margin-right: 20px; line-height: 36px; }
+section .demostration .custom_select { float: left; width: 180px; }
+section .demostration:after { clear: both; display: block; content: ''; }
+section article { margin: 15px 0; }
+section article h3 { margin: 10px 0; }
+
+footer { height: 30px; border-top: 1px dotted #d2d2d2; background: #f2f2f2; }
+footer p { font-size: 9px; color: #999999; margin: 0; padding: 0; line-height: 30px; }
+
+/* Transations */
+.transition, .transition * {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}

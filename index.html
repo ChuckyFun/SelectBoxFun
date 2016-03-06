@@ -9,52 +9,153 @@
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://yandex.st/highlightjs/7.3/styles/default.min.css" />
+    <link rel="stylesheet" href="./extra/perfectScrollbar/css/perfect-scrollbar.min.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,400italic' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./extra/perfectScrollbar/js/perfect-scrollbar.jquery.js"></script>
 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="/">jQuery.SelectBox<sup>.js</sup></a>
+        <div class="container">
+            <div class="logo">
+                <a href="/">jQuery.SelectBox<sup>.js</sup></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="transition" href="https://github.com/ChuckyFun/SelectBoxFun" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="https://github.com/ChuckyFun/SelectBoxFun">GitHub</a></li>
-            </ul>
-        </nav>
     </header>
     <section>
-        <h1>Örnek</h1>
-        <article>
-            <div>
-                <label>Cinsiyet</label>
-                <div class="custom_select">
-                    <select name="gender" id="gender">
-                        <option value="-1">Farketmez</option>
-                        <option value="0">Bayan</option>
-                        <option value="1">Bay</option>
-                    </select>
+        <div class="container">
+            <h1>Örnekler</h1>
+            <article>
+                <h3>Normal Kullanım</h3>
+                <div class="demostration">
+                    <label for="select1">Cinsiyet</label>
+                    <div class="custom_select custom_select_normal">
+                        <select name="select" id="select1">
+                            <option value="-1">Farketmez</option>
+                            <option value="0">Seçenek #1</option>
+                            <option value="1">Seçenek #2</option>
+                            <option value="2">Seçenek #3</option>
+                            <option value="3">Seçenek #4</option>
+                            <option value="4">Seçenek #5</option>
+                            <option value="5">Seçenek #6</option>
+                            <option value="6">Seçenek #7</option>
+                            <option value="7">Seçenek #8</option>
+                            <option value="8">Seçenek #9</option>
+                            <option value="9">Seçenek #10</option>
+                            <option value="10">Seçenek #11</option>
+                            <option value="11">Seçenek #12</option>
+                            <option value="12">Seçenek #13</option>
+                            <option value="13">Seçenek #14</option>
+                            <option value="14">Seçenek #15</option>
+                            <option value="15">Seçenek #16</option>
+                            <option value="16">Seçenek #17</option>
+                            <option value="17">Seçenek #18</option>
+                            <option value="18">Seçenek #19</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <h1>Kullanım</h1>
-        <article>
-            <div class="code_area">
+            </article>
+            <article>
+                <h3>perfectScrollbar ile Kullanım</h3>
+                <div class="demostration">
+                    <label for="select2">Cinsiyet</label>
+                    <div class="custom_select custom_select_with_perfectScrollbar">
+                        <select name="select" id="select2">
+                            <option value="-1">Farketmez</option>
+                            <option value="0">Seçenek #1</option>
+                            <option value="1">Seçenek #2</option>
+                            <option value="2">Seçenek #3</option>
+                            <option value="3">Seçenek #4</option>
+                            <option value="4">Seçenek #5</option>
+                            <option value="5">Seçenek #6</option>
+                            <option value="6">Seçenek #7</option>
+                            <option value="7">Seçenek #8</option>
+                            <option value="8">Seçenek #9</option>
+                            <option value="9">Seçenek #10</option>
+                            <option value="10">Seçenek #11</option>
+                            <option value="11">Seçenek #12</option>
+                            <option value="12">Seçenek #13</option>
+                            <option value="13">Seçenek #14</option>
+                            <option value="14">Seçenek #15</option>
+                            <option value="15">Seçenek #16</option>
+                            <option value="16">Seçenek #17</option>
+                            <option value="17">Seçenek #18</option>
+                            <option value="18">Seçenek #19</option>
+                        </select>
+                    </div>
+                </div>
+            </article>
+            <h1>Kullanım</h1>
+            <article>
+                <h3>HTML</h3>
+                <div class="code_area">
                 <pre>
-                    <code class="javascript">$('.custom_select select').CFSelectBox();</code>
+                    <code class="xml">
+...<br />&lt;div&gt;<br />&#32;&#32;&#32;&#32;&lt;label&#32;for=&quot;select&quot;&gt;Cinsiyet&lt;/label&gt;<br />&#32;&#32;&#32;&#32;&lt;div&#32;class=&quot;custom_select&quot;&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;select&#32;name=&quot;select&quot;&#32;id=&quot;select&quot;&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;-1&quot;&gt;Farketmez&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;0&quot;&gt;Seçenek&#32;#1&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;1&quot;&gt;Seçenek&#32;#2&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;2&quot;&gt;Seçenek&#32;#3&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;3&quot;&gt;Seçenek&#32;#4&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;4&quot;&gt;Seçenek&#32;#5&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;5&quot;&gt;Seçenek&#32;#6&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;6&quot;&gt;Seçenek&#32;#7&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;7&quot;&gt;Seçenek&#32;#8&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;8&quot;&gt;Seçenek&#32;#9&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;9&quot;&gt;Seçenek&#32;#10&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;10&quot;&gt;Seçenek&#32;#11&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;11&quot;&gt;Seçenek&#32;#12&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;12&quot;&gt;Seçenek&#32;#13&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;13&quot;&gt;Seçenek&#32;#14&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;14&quot;&gt;Seçenek&#32;#15&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;15&quot;&gt;Seçenek&#32;#16&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;16&quot;&gt;Seçenek&#32;#17&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;17&quot;&gt;Seçenek&#32;#18&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;option&#32;value=&quot;18&quot;&gt;Seçenek&#32;#19&lt;/option&gt;<br />&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;/select&gt;<br />&#32;&#32;&#32;&#32;&lt;/div&gt;<br />&lt;/div&gt;<br />...
+                    </code>
                 </pre>
-            </div>
-        </article>
+                </div>
+            </article>
+            <article>
+                <h3>JavaScript</h3>
+                <div class="code_area">
+                <pre>
+                    <code class="javascript">
+// Bu şartı sağlayan tüm selectleri etkiler
+$('.custom_select select').CFSelectBox();
+
+// Sadece bu şartı sağlayan selecti etkiler
+$('.custom_select select').CFSelectBox({
+    type: 'single'
+})
+
+// perfectScrollbar jQuery plugin ile kullanımı
+$('.custom_select select').CFSelectBox({
+    usePerfectScroll: true,
+    type: 'single'
+});
+                    </code>
+                </pre>
+                </div>
+            </article>
+            <h1>Kullanabileceğiniz Parametreler</h1>
+            <article>
+                <h4>scrollItemLimit <span>(Varsayılan: 9)</span></h4>
+                <p>Bu parametre ile scroll gösterimi için bir limit belirtebilirsiniz. Varsayılan değer 9'dur ve 9'dan fazla seçenek olduğunda scroll yapılacağını gösterir.</p>
+                <h4>scrollMaxHeight <span>(Varsayılan: 180)</span></h4>
+                <p>Bu parametre ile scroll gösterimi için bir yükseklik limiti belirtebilirsiniz.</p>
+                <h4>usePerfectScroll <span>(Varsayılan: false)</span></h4>
+                <p>Bu parametre ile scroll gösterimi tarayıcının varsayılan görüntüsü olarak kullanmak istemiyorsanız ve perfectScrollbar jquery plugin yüklüyse true değeri verebilirsiniz.</p>
+                <h4>type <span>(Varsayılan: 'all')</span></h4>
+                <p>Bu parametre ile çağırılan selectlerin hepsini veya sadece birini etkilemesi için kullanabilirsiniz.</p>
+            </article>
+        </div>
     </section>
     <footer>
-
+        <div class="container center">
+            <p>- 2016 -</p>
+        </div>
     </footer>
     <script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="./dist/jquery.selectbox.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
 
-            $('.custom_select select').CFSelectBox();
+            $('.custom_select_normal select').CFSelectBox({
+                type: 'single'
+            });
+            $('.custom_select_with_perfectScrollbar select').CFSelectBox({
+                usePerfectScroll: true,
+                type: 'single'
+            });
 
             $('code').each(function(i, e) {hljs.highlightBlock(e)});
 
